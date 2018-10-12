@@ -1,0 +1,15 @@
+﻿Notes:
+
+This tool is made for Sonic and All-Stars Racing Transformed. 
+It exists to reduce or eliminate the possibilty of cheater(s) ruining other player's experience who want to play the game fairly. 
+
+If you are using this tool to forbid player(s) whom you have problems with from entering the lobby, you are violating its purpose. Imagine if all players have a problem with a certain player, and they use the tool in this way. There will be no lobby available for players, and therefore no fun to be had at all. You have to remember that a Matchmaking lobby is a public lobby, therefore anyone could enter and play in there. 
+
+Being a host of a Matchmaking lobby doesn't mean you have the right to choose which player to play with, and by extension, doesn't mean you "own" the lobby. If you really don't feel like playing with someone in a lobby, host a private lobby and try to invite players you want to play with.
+
+As long as a player doesn't cheat, we should allow everyone to play in a Matchmaking lobby. :)
+
+Notes written by: Coldharbour (adapted)
+
+Get the latest version of this program from my Steam profile page:
+http://steamcommunity.com/id/tyapp/

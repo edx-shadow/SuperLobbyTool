@@ -1,0 +1,265 @@
+﻿<--- Changes from V4.4.3 to V4.4.4 [15/09/18] --->
+### Current Lobby ###
+* Host now coloured in magenta.
+* Changed "Mirror Tracks" option to "Disable Mirror Tracks" for added clarity.
+
+### All Lobbies ###
+* Host now coloured in magenta in player list tab.
+
+### Overlay ###
+* Addedd option to shorten the names of some things in the lobby info column.
+
+### Miscellaneous ###
+* Coloured some other text elements.
+* Added tooltips (messages which show when you hover over buttons etc.) to all user interface elements.
+  This essentially works as the documentation/user guide to Super Lobby Tool.
+* Added some more error logging.
+* Some code tweaks.
+
+<--- Changes from V4.4.2 to V4.4.3 [12/09/18] --->
+### Current Lobby ###
+* Now shows whether the lobby is protected by SLT (V4.4.0 or later)
+* Fixed a bug when you regain host control after having previously given it to someone else.
+  This fix also has the beneficial side effect of speeding up the creation of new lobbies.
+
+### All Lobbies ###
+* SLT protected lobbies (V4.4.0 or later) are highlighted in green.
+* Reorganised lobby details window, added host details tab.
+
+### Miscellaneous ###
+* Added more statusbar messages for some events.
+  These include all events which I added sound effects for, plus a couple other events.
+* Further improved debug logging.
+* Some code tweaks.
+
+<--- Changes from V4.4.1 to V4.4.2 [11/09/18] --->
+
+### Overlay ###
+* Added option to hide the header on each column.
+* Added the option to shorten player names to a maximum of 9 characters.
+   Shortened names will show with a dot as the last character.
+
+### Miscellaneous ###
+* Errors when reading configuration files are now more lenient.
+   Most errors now have the option to continue reading the config file.
+   The program will load default values whenever necessary.
+   This can be helpful with updating old configuration files.
+   The program can also create a new config file entirely, if one does not exist.
+* Added readme files in the ./sounds and ./logs folders.
+
+<--- Changes from V4.4.0 to V4.4.1 [10/09/18] --->
+
+### Banlist/Whitelist ###
+* Maximum player count (banlist and whitelist combined) has increased by 12%.
+   This is thanks to a memory optimisation.
+   There is no hard limit on the count, this just means you can now have around 250 players
+   on the list without experiencing any issues.
+* Added a count of the number of blocked connections.
+   The banlist and whitelist have seperate counts, depending on which list caused the block.
+   The count includes multiple blocks of the same player.
+   The count is reset to zero whenever the program is closed.
+* New statusbar message for when a player is blocked.
+
+### Miscellaneous ###
+* Added option for sound effects on certain events.
+   To use them you need to place your own audio files into the "sounds" folder:
+
+   File Name:		Played when you:
+   "join.wav"		enter a lobby
+   "leave.wav"		leave a lobby
+   "enabledashost.wav"	become the host
+   "accessdenied.wav"	block a connection to the lobby
+
+* Various other bug fixes and tweaks.
+
+### Overlay ###
+* Added detailed debug messages to the log file, including any error messages.
+* Added option to shorten names in the character column.
+   When enabled, the maximum length of a character name is 9.
+
+<--- Changes from V4.3.1 to V4.4.0 [08/09/18] --->
+
+### Current Lobby ###
+* You can now migrate the host of the lobby, i.e. give the position of host to someone else.
+   This option is only available when the you are the host.
+
+### All Lobbies ###
+* Lobby details now shows the current host of the lobby.
+
+### About ###
+* More detailed information above the program notes.
+* Added dates to the changelog.
+
+### Miscellaneous ###
+* Various other bug fixes and tweaks.
+
+<--- Changes from V4.2.1 to V4.3.1 [26/08/18] --->
+
+### Current Lobby ###
+* Players are now colour coded: Banned -> red, Friends -> Green, Others -> Black
+
+### All Lobbies ###
+* List now shows all lobbies regardless of whether there are issues retrieving information.
+   Information that fails to be retrieved will show as "Unknown".
+   If any lobbies are still not shown, then this is an issue with Steam.
+* Added activity column, shows what is currently going on in the lobby.
+* Can now view detailed lobby information, as well as the player list.
+* Player list is now colour coded (like the curent lobby tab).
+
+### Banlist ###
+* List now shows in red
+
+### Whitelist ###
+* List now shows in green
+
+### Overlay ###
+* Fixed an overlay error, caused by player names containing special characters.
+
+### Miscellaneous ###
+* Various other bug fixes and tweaks.
+
+<--- Changes from V4.1.2 to V4.2.1 [18/08/18] --->
+
+### Banlist ###
+* Added option to encrypt when importing/exporting text banlists (more on this later)
+
+### Whitelist ###
+* Fixed a bug which sometimes caused players to be kicked when Super Lobby Tool loads.
+
+### Overlay ###
+* Rewrote overlay code.
+* Columns can be auto sized by entering a width of 0.
+* Background is now fitted to the size of each column.
+* Added race position column. 
+   KNOWN BUG: Displays incorrect position after finishing a race.
+* Added empty column, for spacing.
+* Players are ordered by score/rating, highest first.
+* Character column bugs fixed, chosen random character now shown.
+* Now shows splitscreen players.
+* Fixed some bugs that caused the game to crash (there may still be some).
+* For now all other new features/customisation options are inaccessible 
+   (sorry no user interface yet, wait for V5).
+
+### Miscellaneous ###
+* Updated EasyHook library
+* Rollback of SharpDX library, for stability reasons.
+
+### THERE ARE NOW TWO EDITIONS OF SUPER LOBBY TOOL ###
+Full edition - All features available
+Public edition - Disables the following:
+* Adding banlist entries
+* Editing banlist entries
+* Importing non-encrypted text banlists
+* Banlist in config file is ignored, it is instead loaded from an encrypted text file.
+
+Encrypted banlists have been added to safely allow users of the public edition to add 
+new players. This is done in three steps:
+
+1. A user of the full edition generates an encrypted list containing new players.
+2. This user sends the encrypted text to users of the public version.
+3. The user of the public edition adds new players by importing the encrypted text list.
+
+Notes: 
+* Users of the public edition can still generate an encrypted list. This is still safe since
+   any players on that list must have been imported from an encrypted list provided by a user 
+   of the full edition.
+
+* Inside the program folder you will find "banlist_encrypted.txt" which is updated whenever
+   you close Super Lobby Tool (both editions). The public edition of the program saves and
+   loads the banlist from this file. Therefore banlists can also be distributed by sending this
+   file to others.
+
+<--- Changes from V4.1.0 to V4.1.2 [22/07/18] --->
+Note: This is an important hotfix for overlay bugs.
+
+### Current Lobby ###
+* Fixed ping not displaying.
+
+### Overlay ###
+* Fixed overlay disappearing sometimes when a player leaves/joins the lobby.
+* Fixed (possibly severe) drops in framerate after changing overlay settings.
+* Fixed flickering when the overlay updates.
+
+### Miscellaneous ###
+* Updated EasyHook library to latest version.
+* Updated SharpDX library to latest version.
+* Changelog now shows changes from all previous versions (since the changelog was added).
+
+<--- Changes from V4.0.2 to V4.1.0 [15/07/18] --->
+
+### All Lobbies ###
+* Added lobby link generator.
+* Removed lobby ID column for increased lobby privacy.
+* Player total now takes into account splitscreen players.
+
+### Whitelist ###
+* Added new whitelist tab. 
+This is for use in custom lobbies for added privacy.
+
+When enabled it overrides the banlist, only players on the list may enter the lobby. 
+The whitelist tab includes all features of the banlist tab.
+
+IMPORTANT: You may not be able to join a custom lobby hosted by another player if this
+feature is enabled. To prevent this either disable the whitelist, or add the players in that
+custom lobby to your whitelist.
+
+* Added ability to add people from your friends list.
+
+### Overlay ###
+* Fixed background colour not updating in user interface.
+
+### Miscellaneous ###
+* Enabled ability to select multiple items in lists (excluding the all lobbies tab)
+* Added program logging. Logs are stored in the  folder "logs" where the program is located.
+   If you wish to disable logging, delete the logs folder.
+   To re-enable logging, create a new "logs" folder.
+* Major code refinements and reorganisation. This may have introduced new bugs.
+* Updated Steamworks.NET libraries.
+* Some user interface tweaks.
+* Added some useful message boxes / statusbar messages.
+* Prevented opening multiple instances of Super Lobby Tool.
+
+<--- Changes from V3.2.1 to V4.0.2 [24/06/18]--->
+
+### Current Lobby ###
+* Now displays the number of friends and number of banned players in the lobby.
+* Fixed bug with "Skip lobby search" option enabled, which prevented joining of other lobbies.
+
+### All Lobbies ###
+* Can now view players in a lobby, also displays number of friends and number of banned 
+   players in the lobby and gives the option to view Steam profiles.
+* The "Join Lobby" and "View Players in Lobby" controls perform several checks, 
+   including (but not limited to):
+   If the lobby no longer exists
+   If the lobby contains a banned player
+   If you are already in the lobby
+
+### Banlist ###
+* Added enable/disable banlist option (unfortunately this means old configuration files will not work).
+* Updated list of banlist players.
+* Added options to import/export your banlist in text format.
+
+### Overlay ###
+* Refreshing is now extremely fast and crash free.
+* The overlay background is now exactly the right height for the text.
+
+### About ###
+* Added notes.
+* Updated download link location.
+* Added button to view the changelog.
+
+### Other ###
+* General bug fixes.
+* User interface tweaks.
+* Updated to .NET Framework 4.7.2
+* Some other things.
+
+<@@@ KNOWN BUGS @@@>
+* Sometimes after using the "All Lobbies" tab, the game will fail to create new lobbies. 
+   This is Steam behaving strangely, it should clear up after waiting about 30 seconds.
+
+* Sometimes multi-selecting checks/unchecks items for no reason.
+   This seems to be a bug in the windows user interface, needs further investigation.
+
+* Lobbies which contain 10 players may not show in the All Lobbies tab.
+   This is a feature of the Steam matchmaking system, unfortunately it cannot be disabled.

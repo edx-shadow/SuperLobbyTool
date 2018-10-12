@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{0B3F0F27-5BB3-498D-AC90-6E7D7830E040}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SuperLobbyTool</RootNamespace>
+    <AssemblyName>Super Lobby Tool</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>Super Lobby Tool.ico</ApplicationIcon>
+    <StartupObject>SuperLobbyTool.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Overlay">
+      <HintPath>..\..\Overlay.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdditionalElement.cs" />
+    <Compile Include="AllLobbiesUI.cs" />
+    <Compile Include="BackgroundElement.cs" />
+    <Compile Include="CharacterElement.cs" />
+    <Compile Include="ColumnElement.cs" />
+    <Compile Include="ColumnsElement.cs" />
+    <Compile Include="ConfigurationElementEx.cs" />
+    <Compile Include="ConfigurationSectionEx.cs" />
+    <Compile Include="CurrentLobbyUI.cs" />
+    <Compile Include="DebugTools.cs" />
+    <Compile Include="DialogBoxAddFriends.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogBoxAddFriends.Designer.cs">
+      <DependentUpon>DialogBoxAddFriends.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogBoxChangelog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogBoxChangelog.Designer.cs">
+      <DependentUpon>DialogBoxChangelog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogBoxColumnAdditional.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogBoxColumnAdditional.Designer.cs">
+      <DependentUpon>DialogBoxColumnAdditional.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogBoxImportExport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogBoxImportExport.Designer.cs">
+      <DependentUpon>DialogBoxImportExport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogBoxLobbyDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogBoxLobbyDetails.Designer.cs">
+      <DependentUpon>DialogBoxLobbyDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogBoxLobbyLink.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogBoxLobbyLink.Designer.cs">
+      <DependentUpon>DialogBoxLobbyLink.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogBoxOverlayColumn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogBoxOverlayColumn.Designer.cs">
+      <DependentUpon>DialogBoxOverlayColumn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogBoxPlayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogBoxPlayer.Designer.cs">
+      <DependentUpon>DialogBoxPlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorMessage.cs" />
+    <Compile Include="EventListeners.cs" />
+    <Compile Include="FontsElement.cs" />
+    <Compile Include="GameData.cs" />
+    <Compile Include="GameMemory.cs" />
+    <Compile Include="GenericConfigurationElementCollection.cs" />
+    <Compile Include="HostOptionsElement.cs" />
+    <Compile Include="InternalConfig.cs" />
+    <Compile Include="ListViewDoubleBuffered.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LobbyBasicElement.cs" />
+    <Compile Include="LobbyInfoElement.cs" />
+    <Compile Include="LobbyMatchModeElement.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OverlayElement.cs" />
+    <Compile Include="OverlayUI.cs" />
+    <Compile Include="PlayerElement.cs" />
+    <Compile Include="PlayerListElement.cs" />
+    <Compile Include="PlayerListUI.cs" />
+    <Compile Include="PlayerNameElement.cs" />
+    <Compile Include="PositionElement.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="ProgramConfigSection.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RijndaelManagedEncryption.cs" />
+    <Compile Include="SoundEffects.cs" />
+    <Compile Include="SteamData.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DialogBoxAddFriends.resx">
+      <DependentUpon>DialogBoxAddFriends.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogBoxChangelog.resx">
+      <DependentUpon>DialogBoxChangelog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogBoxColumnAdditional.resx">
+      <DependentUpon>DialogBoxColumnAdditional.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogBoxImportExport.resx">
+      <DependentUpon>DialogBoxImportExport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogBoxLobbyDetails.resx">
+      <DependentUpon>DialogBoxLobbyDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogBoxLobbyLink.resx">
+      <DependentUpon>DialogBoxLobbyLink.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogBoxOverlayColumn.resx">
+      <DependentUpon>DialogBoxOverlayColumn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogBoxPlayer.resx">
+      <DependentUpon>DialogBoxPlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\AboutTabNotes.txt" />
+    <EmbeddedResource Include="Resources\BuildDate.txt" />
+    <EmbeddedResource Include="Resources\ChangeLog.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

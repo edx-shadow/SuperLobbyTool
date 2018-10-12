@@ -1,0 +1,23 @@
+C:\Reverse\Tyapp\Super Lobby Tool (Public)\Solution\Super Lobby Tool\obj\x86\Debug\Super Lobby Tool.csprojAssemblyReference.cache
+C:\Reverse\Tyapp\Super Lobby Tool (Public)\Solution\Super Lobby Tool\obj\x86\Debug\SuperLobbyTool.DialogBoxAddFriends.resources
+C:\Reverse\Tyapp\Super Lobby Tool (Public)\Solution\Super Lobby Tool\obj\x86\Debug\SuperLobbyTool.DialogBoxChangelog.resources
+C:\Reverse\Tyapp\Super Lobby Tool (Public)\Solution\Super Lobby Tool\obj\x86\Debug\SuperLobbyTool.DialogBoxColumnAdditional.resources
+C:\Reverse\Tyapp\Super Lobby Tool (Public)\Solution\Super Lobby Tool\obj\x86\Debug\SuperLobbyTool.DialogBoxImportExport.resources
+C:\Reverse\Tyapp\Super Lobby Tool (Public)\Solution\Super Lobby Tool\obj\x86\Debug\SuperLobbyTool.DialogBoxLobbyDetails.resources
+C:\Reverse\Tyapp\Super Lobby Tool (Public)\Solution\Super Lobby Tool\obj\x86\Debug\SuperLobbyTool.DialogBoxLobbyLink.resources
+C:\Reverse\Tyapp\Super Lobby Tool (Public)\Solution\Super Lobby Tool\obj\x86\Debug\SuperLobbyTool.DialogBoxOverlayColumn.resources
+C:\Reverse\Tyapp\Super Lobby Tool (Public)\Solution\Super Lobby Tool\obj\x86\Debug\SuperLobbyTool.DialogBoxPlayer.resources
+C:\Reverse\Tyapp\Super Lobby Tool (Public)\Solution\Super Lobby Tool\obj\x86\Debug\SuperLobbyTool.MainForm.resources
+C:\Reverse\Tyapp\Super Lobby Tool (Public)\Solution\Super Lobby Tool\obj\x86\Debug\SuperLobbyTool.Properties.Resources.resources
+C:\Reverse\Tyapp\Super Lobby Tool (Public)\Solution\Super Lobby Tool\obj\x86\Debug\Super Lobby Tool.csproj.GenerateResource.cache
+C:\Reverse\Tyapp\Super Lobby Tool (Public)\Solution\Super Lobby Tool\obj\x86\Debug\Super Lobby Tool.csproj.CoreCompileInputs.cache
+C:\Reverse\Tyapp\Super Lobby Tool (Public)\Solution\Super Lobby Tool\bin\Debug\Super Lobby Tool.exe.config
+C:\Reverse\Tyapp\Super Lobby Tool (Public)\Solution\Super Lobby Tool\bin\Debug\Super Lobby Tool.exe
+C:\Reverse\Tyapp\Super Lobby Tool (Public)\Solution\Super Lobby Tool\bin\Debug\Super Lobby Tool.pdb
+C:\Reverse\Tyapp\Super Lobby Tool (Public)\Solution\Super Lobby Tool\bin\Debug\Overlay.dll
+C:\Reverse\Tyapp\Super Lobby Tool (Public)\Solution\Super Lobby Tool\bin\Debug\SharpDX.dll
+C:\Reverse\Tyapp\Super Lobby Tool (Public)\Solution\Super Lobby Tool\bin\Debug\EasyHook.dll
+C:\Reverse\Tyapp\Super Lobby Tool (Public)\Solution\Super Lobby Tool\bin\Debug\SharpDX.Direct3D9.dll
+C:\Reverse\Tyapp\Super Lobby Tool (Public)\Solution\Super Lobby Tool\obj\x86\Debug\Super Lobby Tool.csproj.CopyComplete
+C:\Reverse\Tyapp\Super Lobby Tool (Public)\Solution\Super Lobby Tool\obj\x86\Debug\Super Lobby Tool.exe
+C:\Reverse\Tyapp\Super Lobby Tool (Public)\Solution\Super Lobby Tool\obj\x86\Debug\Super Lobby Tool.pdb
